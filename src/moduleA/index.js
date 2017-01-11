@@ -1,5 +1,5 @@
-import controller from './pageA/controller'
-import page from './pageA/jade.jade'
+import controller from './pageA/Controller'
+import page from './pageA/Jade.jade'
 
 
 export default angular.module('app.moduleA', [])
