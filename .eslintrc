@@ -1,0 +1,61 @@
+{
+  "extends": "airbnb/base",
+  "parser": "babel-eslint",
+  "rules":{
+    "eqeqeq":0,
+    "func-names":0,
+    "no-use-before-define":0,
+    "valid-jsdoc":["error",{
+      "requireReturn":false
+    }],
+    "require-jsdoc": ["error", {
+        "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": false
+        }
+    }],    
+    "no-confusing-arrow":0,
+    "semi":[2,"never"],
+    "max-lines":["error",400],
+    "max-nested-callbacks":["error",4],
+    "max-depth": ["error",4],
+    "no-param-reassign":0, //函数参数再赋值
+    "class-methods-use-this":0, //class中不使用到this的方法声明为static
+    "no-unused-expressions":["error",{
+      "allowShortCircuit": true, //允许断路（逻辑或、逻辑与）
+      "allowTernary": true  //允许三元运算符
+    }],
+    "no-restricted-syntax": 0, //禁止使用特定的语法 width  for in
+    "no-tabs":0,
+    "no-console":0
+  },
+  "globals": {
+    "_": true,
+    "moment": true,
+    "angular":true,
+    "REST":true,
+    "DEV":true,
+    "RAP":true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

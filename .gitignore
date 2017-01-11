@@ -1,0 +1,7 @@
+﻿.Ds_store
+.idea
+node_modules/*
+reports/*
+npm-debug.log*
+stats.json
+node_modules/
