@@ -8,6 +8,9 @@
 
 ## 开发目的
 * 学习ES6与angular开发规范
+    --主要参考的两篇文章
+    https://github.com/kuitos/kuitos.github.io/issues/34
+    https://github.com/xufei/blog/issues/29
 * 学习业务代码与框架(angular)松耦合
     
 
