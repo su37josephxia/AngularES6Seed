@@ -1,4 +1,4 @@
-import controller from './page1/controller'
+import controller from './pageA/controller'
 
 
 export default angular.module('app.moduleA', [])

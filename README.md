@@ -1,16 +1,23 @@
 # Angular1.0+ES6+Lodash前端种子 
 > @author xiaran
 
+* 初始化 `npm install`
 * 调试开发 `npm run dev`
+  http://localhost:5000
 * 代码规范校验 `npm run lint`
 
+## 开发目的
+* 学习ES6与angular开发规范
+* 学习业务代码与框架(angular)松耦合
+    
 
 ## 技术选型
 * angular1.5 多用component
 * ui-router 或 component router(待完成,强烈推荐)
 * ES6语法
-* 代码规范校验(待完成,强烈推荐)
-* 测试karma+jasmine(待完成,强烈推荐)
+* 代码规范校验(待完成)
+* 测试karma+jasmine(待完成)
+* 与框架松耦合(app.js 和 index.js 以外程序与angular无关)
 
 ## ES6
 * 使用es6的语法

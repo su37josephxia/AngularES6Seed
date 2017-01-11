@@ -8,7 +8,7 @@ export default class {
 
 		console.log('start....')
 
-		http.save('', {});
+		//http.save('', {});
 
 		console.log('end....')
 	}
