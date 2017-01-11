@@ -1,24 +1,25 @@
 import controller from './pageA/controller'
+import page from './pageA/jade.jade'
 
 
 export default angular.module('app.moduleA', [])
 
-	//.service('httpServci')
+// .service('httpServci')
 
-	.config(['$stateProvider', '$urlRouterProvider',
-		$stateProvider=> {
-			$stateProvider
-				.state('pageA', {
-					url: '/pageA',
-					template: require('./pageA/jade.jade'),
+.config(['$stateProvider', '$urlRouterProvider',
+  ($stateProvider) => {
+    $stateProvider
+    .state('pageA', {
+      url: '/pageA',
+      template: page,
 
-					// jade模版或html方式
-					controller: controller,
-					controllerAs: 'vm'
+      // jade模版或html方式
+      controller,
+      controllerAs: 'vm',
 
-				})
-		}])
+    })
+  }])
 
 
-	.controller('es6SampleControler', controller)
-	.name
+.controller('es6SampleControler', controller)
+  .name

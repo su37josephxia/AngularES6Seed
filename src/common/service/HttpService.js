@@ -1,13 +1,15 @@
+
+
 import injector from 'angular-es-utils/injector'
-import {FetchHttp} from 'es6-http-utils'
+import { FetchHttp } from 'es6-http-utils'
 
 export default {
 
-	get(url) {
-		return injector.get('$http').get(url)
-	},
+  get(url) {
+    return injector.get('$http').get(url)
+  },
 
-	post(url, payload) {
-		return FetchHttp.post(url, payload)
-	},
+  post(url, payload) {
+    return FetchHttp.post(url, payload)
+  },
 }

@@ -1,26 +1,32 @@
 import service from './Service'
 import http from '../../common/service/HttpService'
+
 export default class {
-	constructor() {
-		this.name = 'angular&es6'
-		this.service = service.say()
-		this.count = 0
+  /**
+   * 构造方法
+   */
+  constructor() {
+    this.name = 'angular&es6'
+    this.service = service.say()
+    this.count = 0
 
-		console.log('start....')
+    console.log('start....')
 
 
+    console.log('end....')
+  }
 
-		console.log('end....')
-	}
+  /**
+   * 增加数字
+   */
+  add() {
+    this.count += 1
+  }
 
-	add() {
-
-		this.count++
-	}
-
-	getHttpRequest(){
-
-		http.post('', {});
-
-	}
+  /**
+   * 调用Http请求
+   */
+  getHttpRequest() {
+    http.post('', {})
+  }
 }
