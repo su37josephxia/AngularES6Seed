@@ -1,25 +1,22 @@
-import controller from './pageA/Controller'
-import page from './pageA/Jade.jade'
+import controllerPageA from './pageA/Controller'
+import pageA from './pageA/Jade.jade'
 
 
-export default angular.module('app.moduleA', [])
+let module = angular.module('app.moduleA', [])
 
-// .service('httpServci')
-
-.config(['$stateProvider', '$urlRouterProvider',
-  ($stateProvider) => {
+// 添加一个页面
+////////Begin///////////////
+module.config(['$stateProvider', '$urlRouterProvider',
+  $stateProvider => {
     $stateProvider
     .state('pageA', {
       url: '/pageA',
-      template: page,
-
-      // jade模版或html方式
-      controller,
+      template: pageA,
+      controller: controllerPageA,
       controllerAs: 'vm',
 
     })
   }])
+///////////////////////
 
-
-.controller('es6SampleControler', controller)
-  .name
+export default module.name

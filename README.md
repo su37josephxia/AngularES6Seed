@@ -55,7 +55,6 @@
 ```
 ├── app.js 入口js
 ├── index
-
 ├── main.css css
 ├── common 通用组件，服务都放在这里
 │   ├── common.js
@@ -65,9 +64,35 @@
 ├── moduleA 模块A (ui-router实现)
 │   │   ├── pageA A页面
 ├── moduleB 模块B (component + component router实现 待完成)
-│   │   ├── pageA A页面
+│   │   ├── pageB B页面
 
 ```
+
+
+## 开发流程
+> 添加一个页面 
+
+  例: 
+  1, pageA  添加 Controller.js Jade.jade
+      
+  2, moduleA/index.js 增加路由配置
+
+```
+module.config(['$stateProvider', '$urlRouterProvider',
+  $stateProvider => {
+    $stateProvider
+    .state('pageA', {
+      url: '/pageA',
+      template: pageA,
+      controller: controllerPageA,
+      controllerAs: 'vm',
+
+    })
+  }])
+
+```
+  
+
 
 
 
