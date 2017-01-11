@@ -7,7 +7,7 @@ export default {
 		return injector.get('$http').get(url)
 	},
 
-	save(url, payload) {
+	post(url, payload) {
 		return FetchHttp.post(url, payload)
 	},
 }

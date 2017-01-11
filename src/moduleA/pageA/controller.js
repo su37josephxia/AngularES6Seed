@@ -1,5 +1,5 @@
 import service from './Service'
-//import http from './HttpService'
+import http from '../../common/service/HttpService'
 export default class {
 	constructor() {
 		this.name = 'angular&es6'
@@ -8,7 +8,7 @@ export default class {
 
 		console.log('start....')
 
-		//http.save('', {});
+
 
 		console.log('end....')
 	}
@@ -16,5 +16,11 @@ export default class {
 	add() {
 
 		this.count++
+	}
+
+	getHttpRequest(){
+
+		http.post('', {});
+
 	}
 }
