@@ -4,4 +4,13 @@ div Service:{{vm.service}}
 div Count:{{vm.count}}
 button(ng-click='vm.add()') add
 
-button(ng-click='vm.getHttpRequest()') getHttpRequest
+button(ng-click='vm.getHttpRequest()') saiku请求
+
+
+
+div(ng-repeat='item in vm.cellset')
+    span(ng-repeat='row in item')
+        span(ng-bind='row.value')
+        span ]  [
+
+

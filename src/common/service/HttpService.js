@@ -9,7 +9,13 @@ export default {
     return injector.get('$http').get(url)
   },
 
-  post(url, payload) {
-    return FetchHttp.post(url, payload)
-  },
+  //post(url, payload) {
+  //  return FetchHttp.post(url, payload)
+  //},
+
+  post(url,param){
+
+    return injector.get('$http').post(url,param)
+  }
+
 }

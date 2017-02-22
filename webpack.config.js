@@ -101,15 +101,15 @@ var config = {
       //  changeOrigin: true,
       //  secure: false
       //},
-      //'/api/*': {
-      //  //  target: 'http://front.dev.tradingmax.com/',
-      //  target: 'http://front.test.tradingmax.com/',
-      //  // pathRewrite: {
-      //  //   '^/dev': ''
-      //  // },
-      //  changeOrigin: true,
-      //  secure: false
-      //}
+      '/saiku/*': {
+        //  target: 'http://front.dev.tradingmax.com/',
+        target: 'http://localhost:8080/',
+        // pathRewrite: {
+        //   '^/dev': ''
+        // },
+        changeOrigin: true,
+        secure: false
+      }
     }
   }
 }

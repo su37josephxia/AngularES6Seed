@@ -2,12 +2,11 @@ import controllerPageA from './pageA/Controller'
 import pageA from './pageA/Jade.jade'
 
 
-let module = angular.module('app.moduleA', [])
+const module = angular.module('app.moduleA', [])
 
 // 添加一个页面
-////////Begin///////////////
 module.config(['$stateProvider', '$urlRouterProvider',
-  $stateProvider => {
+  ($stateProvider) => {
     $stateProvider
     .state('pageA', {
       url: '/pageA',
@@ -17,6 +16,5 @@ module.config(['$stateProvider', '$urlRouterProvider',
 
     })
   }])
-///////////////////////
 
 export default module.name
