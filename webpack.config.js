@@ -103,7 +103,7 @@ var config = {
       //},
       '/saiku/*': {
         //  target: 'http://front.dev.tradingmax.com/',
-        target: 'http://localhost:8080/',
+        target: 'http://192.168.0.228:9080/',
         // pathRewrite: {
         //   '^/dev': ''
         // },
