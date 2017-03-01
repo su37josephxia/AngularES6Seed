@@ -101,15 +101,6 @@ var config = {
       //  changeOrigin: true,
       //  secure: false
       //},
-      '/saiku/*': {
-        //  target: 'http://front.dev.tradingmax.com/',
-        target: 'http://192.168.0.228:9080/',
-        // pathRewrite: {
-        //   '^/dev': ''
-        // },
-        changeOrigin: true,
-        secure: false
-      }
     }
   }
 }
