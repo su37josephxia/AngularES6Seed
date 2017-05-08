@@ -59,8 +59,8 @@
     "angular": "^1.5.8",
     "angular-es-utils": "^2.1.2",
     "angular-ui-router": "^0.3.2",
+    "echarts": "^3.5.4",
     "es6-http-utils": "^2.0.1",
-
     "lodash": "^4.17.2"
   }
 }
