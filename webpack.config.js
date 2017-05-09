@@ -101,6 +101,15 @@ var config = {
       //  changeOrigin: true,
       //  secure: false
       //},
+      //'/api/*': {
+      //  //  target: 'http://front.dev.tradingmax.com/',
+      //  target: 'http://front.test.tradingmax.com/',
+      //  // pathRewrite: {
+      //  //   '^/dev': ''
+      //  // },
+      //  changeOrigin: true,
+      //  secure: false
+      //}
     }
   }
 }

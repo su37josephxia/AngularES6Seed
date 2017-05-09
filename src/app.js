@@ -6,14 +6,14 @@ import 'angular-ui-router'
 import moduleA from './moduleA/index'
 
 export default angular
-  .module('app', [
-    'ui.router',
-    moduleA,
-  ])
+.module('app', [
+  'ui.router',
+  moduleA,
+])
 
-  // 设置首页
-  .config(['$urlRouterProvider', ($urlRouterProvider) => {
-    $urlRouterProvider.otherwise('/pageA')
-  }])
+// 设置首页
+.config(['$urlRouterProvider', $urlRouterProvider => {
+  $urlRouterProvider.otherwise('/pageA')
+}])
 
-  .run()
+.run()
