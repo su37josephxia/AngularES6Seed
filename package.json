@@ -41,11 +41,10 @@
     "html-webpack-plugin": "^2.22.0",
     "install": "^0.8.2",
     "istanbul-instrumenter-loader": "^1.0.0",
-    "jade-loader": "^0.8.0",
     "jasmine-core": "^2.5.2",
     "ng-annotate-loader": "^0.1.1",
     "npm": "^4.0.3",
-    "pug-html-loader": "^1.0.8",
+    "pug-html-loader": "1.1.0",
     "pug-loader": "^2.3.0",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
@@ -60,7 +59,6 @@
     "angular-es-utils": "^2.1.2",
     "angular-ui-router": "^0.3.2",
     "es6-http-utils": "^2.0.1",
-
     "lodash": "^4.17.2"
   }
 }
