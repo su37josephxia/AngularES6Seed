@@ -1,9 +1,30 @@
+import 'style'
 import service from './Service'
 import http from '../../common/service/HttpService'
 import colorUtils from '../color/color'
 import echarts from 'echarts/dist/echarts.common.min'
+import $ from 'jquery'
+window.$ = $
+import 'jquery.dataTables.min'
+//import 'dataTables.fixedColumns.min'
+
+//var $       = require( 'jquery' );
+//var dt      = require( 'datatables.net' )
+import 'datatables.net'
+import 'datatables.net-fixedcolumns'
+import 'datatables.net-fixedheader'
+import 'datatables.net-dt/css/jquery.dataTables.css'
+import 'datatables.net-fixedcolumns-dt/css/fixedcolumns.dataTables.css'
+import 'datatables.net-fixedheader-dt/css/fixedheader.dataTables.css'
+//console.log('dtttt',dt)
+
+//var dt      = require( 'datatables.net' )( window, $ );
+//var buttons = require( 'datatables.net-buttons' )( window, $ );
+
 
 export default class {
+
+
     /**
      * 构造方法
      */
@@ -18,7 +39,29 @@ export default class {
         this.genChart()
     }
 
+    $onInit(){
+        console.log($('#example'))
+        var table = $('#example').DataTable( {
+            scrollY:        300,
+            scrollX:        true,
+            scrollCollapse: true,
+            paging:         false,
+            fixedColumns:   true
+        } );
+        //$(table.table().container()).on( 'click', 'td', function () {
+        //    var cell = table.cell( this );
+        //
+        //    $('#click-output').prepend(
+        //        '<div>'+cell.data()+'</div>'
+        //    );
+        //} );
+
+
+    }
+
     genChart(){
+        console.log('count...'+this.count)
+
         let option = this.getTemplateOption()
         option.series = []
         for (let i = 0;i < this.count;i++){
